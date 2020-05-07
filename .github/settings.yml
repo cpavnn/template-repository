@@ -1,0 +1,7 @@
+protected_branches:
+  master:
+    required_status_checks:
+      include_admins: true  # Enforce required status checks for repository administrators.
+      strict: true # Require branches to be up to date before merging.
+      contexts: [continuous-integration/jenkins]
+    required_pull_request_reviews: true
